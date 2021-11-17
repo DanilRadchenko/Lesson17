@@ -1,0 +1,142 @@
+body {
+	background: skyblue;
+	font-size:25px;
+	line-height: 39px;
+	color: white;
+	}
+h1 {
+    margin-top: 100px;
+	font-size: 60px;
+	text-align: center;
+	color: white;
+}	
+a {
+	color: white;
+}
+main {
+	margin: 40px 0;
+	background-color: hotpink;
+}
+main ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+	}
+main ul li {
+	display:inline-block;
+	background-color: hotpink;
+	}
+main a {
+	display:block;
+	padding:0 15px;	
+	color:skyblue;
+	font-size:25px;
+	line-height: 65px;
+	text-decoration:none;
+}
+main a:hover { 
+	background-color: purple; 
+    color: skyblue;
+}
+main ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px;
+}
+main ul li:hover > ul {
+	display:inherit;
+}
+main ul ul li {
+	width:150px;
+	display:list-item;
+	position: relative;
+}
+main ul ul ul li {
+	position: relative;
+    bottom:40px; 
+	left:150px;
+}
+.form-floating{
+    color: black;
+}
+.btn{
+    margin-top: 10px;
+}
+.orange {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    background-color: hotpink;
+}
+.orange-inner {
+    width: 100%;
+    padding: 100px 0;
+}
+.orange-social {
+    width: 200px;
+    height: 35px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.social-icon {
+    width: 35px;
+    height: 35px;
+    border: 2px solid skyblue;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icon i {
+    font-size: 16px;
+    color: skyblue;
+}
+.social-icon:hover {
+    background: skyblue;
+}
+.social-icon:hover i {
+    color: hotpink;
+}
+.orange-rights {
+    color: skyblue;
+    text-transform: uppercase;
+    margin: 60px 0 0 0;
+    text-align: center;
+}
+.card{
+    background-size: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card-title{
+    color: black;
+}
+.card-text{
+    color: black;
+}
+button{
+    display: flex;
+    justify-content: center;
+}
+@media  screen and (max-width:767px) {
+    .form-floating{
+        width: 100%;
+    }
+    .orange{
+        height:100%;
+    }
+    .card{
+        display: flex;
+    }
+    .card-boy{
+        justify-content: center;
+    }
+    main ul ul ul li {
+        position: relative;
+        bottom:70px; 
+        left:10px;
+    }
+}
